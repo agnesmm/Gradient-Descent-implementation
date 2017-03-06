@@ -51,6 +51,8 @@ def gradient_descent(theta, plot=False):
       theta[j] = theta[j] - (alpha/m)*np.multiply(h-y_train, Xj).sum()
   if plot:
     plt.plot(cost)
+    plt.xlabel('Number of iterations')
+    plt.ylabel('Cost function')
     plt.show()
   return theta
 
